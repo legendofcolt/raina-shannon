@@ -1,0 +1,14 @@
+---
+layout: default
+---
+
+<article class="container">
+  <h1 class="header-gradient">Portfolio</h1>
+  {% for post in site.posts %}
+    {% cycle '<div class="grid grid--gutters grid--full large-grid--fit">', '' %}
+    {% include post.html %}
+    {% cycle '', '</div>' %}
+  {% endfor %}
+</article>
+
+{% include about-cta.html %}
