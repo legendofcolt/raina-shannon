@@ -11,28 +11,29 @@
 
 */
 
-.link {
+$transition-time: 300ms;
+
+.link,
+.About a {
   color: $primary;
   text-decoration: none;
-  transition: color .15s ease-in;
+  transition: color $transition-time;
 }
 
-.link:link,
-.link:visited {
-  color: $primary;
-  transition: color .15s ease-in;
-}
-.link:hover,
-.link:active,
-.link-active    {
+.link:hover, .link:active
+.link.link-active,
+.About a:hover, .About a:active {
   color: $alternate;
-  transition: color .15s ease-in;
 }
 
-.link:focus   {
-  background-color: $alternate !important;
-  transition: color .15s ease-in, background-color .15s ease-in;
+.link:focus,
+.About a:focus {
+  color: $near-white;
+  background-color: $alternate;
+  transition: color $transition-time, background-color $transition-time;
 }
 
-.underline             { text-decoration: underline; }
-.underline-hover:hover { text-decoration: underline; }
+.link:focus:active,
+.About a:focus:active {
+  background-color: transparent;
+}
