@@ -110,6 +110,8 @@
 
   @media #{$medium-up} {
     display: inline-block;
+    margin-top: initial;
+    margin-bottom: initial;
 
     &:nth-of-type(2n) {
       @include ms-respond(margin-left, 1);

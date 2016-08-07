@@ -22,14 +22,13 @@
   color: $primary;
   transition: color .15s ease-in;
 }
-.link:hover   {
+.link:hover,
+.link:active,
+.link-active    {
   color: $alternate;
   transition: color .15s ease-in;
 }
-.link:active,
-.link-active  {
-  transition: color .15s ease-in;
-}
+
 .link:focus   {
   background-color: $alternate !important;
   transition: color .15s ease-in, background-color .15s ease-in;
