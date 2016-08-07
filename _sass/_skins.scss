@@ -192,6 +192,15 @@
   -webkit-background-clip: text;
 }
 
+// Takes a degree and two colors to make a text color gradient.
+@mixin text-gradient ($degree, $color1, $color2) {
+  color: $color1;
+  -webkit-text-fill-color: transparent;
+  background: -webkit-linear-gradient($degree, $color1, $color2);
+  background: -o-linear-gradient($degree, $color1, $color2);
+  -webkit-background-clip: text;
+}
+
 .bg-primary-scheme { background-color: $primary-scheme; }
 .bg-alternate-scheme { background-color: $alternate-scheme; }
 

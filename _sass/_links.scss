@@ -11,32 +11,28 @@
 
 */
 
-article a {
-  text-decoration: none;
-  color: $alternate-scheme;
-}
-article a:hover { border-bottom: 1px solid; }
-
 .link {
+  color: $primary;
   text-decoration: none;
   transition: color .15s ease-in;
 }
 
 .link:link,
 .link:visited {
+  color: $primary;
   transition: color .15s ease-in;
 }
 .link:hover   {
+  color: $alternate;
   transition: color .15s ease-in;
-  border-bottom: none;
 }
-.link:active  {
+.link:active,
+.link-active  {
   transition: color .15s ease-in;
 }
 .link:focus   {
-  transition: color .15s ease-in;
-  background: $white !important;
-  color: $primary-scheme !important;
+  background-color: $alternate !important;
+  transition: color .15s ease-in, background-color .15s ease-in;
 }
 
 .underline             { text-decoration: underline; }
