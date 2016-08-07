@@ -190,6 +190,7 @@
   background: -webkit-linear-gradient(141deg, $one 0%, $two 51%, $three 75%);
   background: -o-linear-gradient(141deg, $one 0%, $two 51%, $three 75%);
   -webkit-background-clip: text;
+  background-clip: text;
 }
 
 // Takes a degree and two colors to make a text color gradient.
