@@ -154,12 +154,12 @@
 .About img {
   @include ms-respond(padding-bottom, 3);
 
-  @media#{$medium-up} {
-    @include ms-respond(padding-left, 3);
+  @media #{$medium-up} {
+    @include ms-respond(padding-left, 1);
     float: right;
   }
-}
 
-.About p {
-  @include ms-respond(font-size, 1);
+  @media #{$large-up} {
+    @include ms-respond(padding-left, 3);
+  }
 }
