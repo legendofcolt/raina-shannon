@@ -5,7 +5,7 @@ description: ""
 permalink: /about/
 ---
 
-#I'm a Graphic Designer & Artist based in Chicago.
+# I'm a Graphic Designer & Artist based in Chicago.
 
 ![Profile picture of Raina Shannon]({{ site.baseurl }}/images/raina-shannon-profile.jpg)
 
