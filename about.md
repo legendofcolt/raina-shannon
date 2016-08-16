@@ -5,13 +5,12 @@ description: ""
 permalink: /about/
 ---
 
-# I'm a Graphic Designer, Lettering Artist & Illustrator based in Chicago.<br>-
+#I'm a Graphic Designer & Artist based in Chicago.
 
-![alt](http://placekitten.com/464/618)
+![Profile picture of Raina Shannon]({{ site.baseurl }}/images/raina-shannon-profile.jpg)
 
-Though I've lived in Chicago since 2008, I'll always be a Minnesotan at heart. Like most who hail from the Prince State, my accent is thick, my weakness for dairy is apparent, and my belief in kindness is firm. I specialize in custom type, branding, commercial and editorial illustration, book covers and posters — but generally I'm happiest working for happy people, doing highly-detailed work and cracking dad jokes.
+I usually say I'm from Texas, but it says "Roswell, NM" on my birth certificate. So who knows where I'm really from.
 
-I spend my days with the wonderful weirdos at [Delicious Design League](#), teach Expressive Type at the Chicago Portfolio School, and travel as much as possible. It's not a bad life.
+There is a lot of Scorpio in my astrology chart. I may or may not totally believe in that stuff, but if you do, you practically already know me.
 
-For collaborations, inquiries, or to send me recipes:
-[hello@kyleletendre.com](#)
+I spend a lot of time learning new hobbies and historical facts that really have nothing to do with my design career – But I can knit you a cool beanie.

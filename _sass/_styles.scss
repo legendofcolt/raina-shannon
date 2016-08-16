@@ -146,10 +146,9 @@
 
 /* About */
 .About h1 {
-  line-height: 1.6;
-  @include ms-respond(font-size, 5);
-  // @include ms-respond(padding-left, 1);
-  // @include ms-respond(padding-right, 1);
+  line-height: 1.5;
+  @include ms-respond(font-size, 4);
+  @include ms-respond(margin-top, 6);
 }
 
 .About img {
