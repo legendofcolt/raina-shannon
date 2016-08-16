@@ -145,21 +145,22 @@
 }
 
 /* About */
-.About h1 {
-  line-height: 1.5;
-  @include ms-respond(font-size, 4);
-  @include ms-respond(margin-top, 6);
+.About{
+  clear: both;
 }
 
-.About img {
-  @include ms-respond(padding-bottom, 3);
+.about-title {
+  display: inline-block;
+  @include ms-respond(font-size, 4);
+}
 
-  @media #{$medium-up} {
-    @include ms-respond(padding-left, 1);
+.about-image {
+  // @include ms-respond(padding-bottom, 3);
+  display: block;
+  margin: 0 auto;
+
+  @media #{$about-img-break} {
     float: right;
-  }
-
-  @media #{$large-up} {
-    @include ms-respond(padding-left, 3);
+    @include ms-respond(padding-left, 2);
   }
 }
