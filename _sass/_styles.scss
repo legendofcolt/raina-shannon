@@ -136,7 +136,8 @@
   }
 }
 
-.container {
+.container,
+.site-footer {
   max-width: ms(9);
   margin-left: auto;
   margin-right: auto;
@@ -145,19 +146,29 @@
 }
 
 /* About */
-.About{
+.About:before,
+.About:after {
+  content: " ";
+  display: table;
+}
+.About:after {
   clear: both;
 }
 
-.about-title {
+.About {
+  *zoom: 1;
+}
+
+.About h1 {
   display: inline-block;
   @include ms-respond(font-size, 4);
 }
 
-.about-image {
-  // @include ms-respond(padding-bottom, 3);
+.img-container {
+  max-width: 427px;
   display: block;
   margin: 0 auto;
+  @include ms-respond(padding-bottom, 2);
 
   @media #{$about-img-break} {
     float: right;
