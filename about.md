@@ -2,7 +2,7 @@
 layout: page
 title: About
 description: ""
-permalink: /about/
+permalink: /about
 ---
 
 # I'm a Graphic Designer & Artist based in Chicago.
