@@ -1,0 +1,39 @@
+
+// Converted Variables
+
+
+// Custom Media Query Variables
+
+
+/*
+
+   LINKS
+
+*/
+
+$transition-time: 300ms;
+
+.link,
+.About a {
+  color: $primary;
+  text-decoration: none;
+  transition: color $transition-time;
+}
+
+.link:hover, .link:active
+.link.link-active,
+.About a:hover, .About a:active {
+  color: $alternate;
+}
+
+.link:focus,
+.About a:focus {
+  color: $near-white;
+  background-color: $alternate;
+  transition: color $transition-time, background-color $transition-time;
+}
+
+.link:focus:active,
+.About a:focus:active {
+  background-color: transparent;
+}
