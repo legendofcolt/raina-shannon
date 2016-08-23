@@ -175,3 +175,7 @@
     @include ms-respond(padding-left, 2);
   }
 }
+
+.social a {
+  @include ms-respond(margin-right, -1);
+}
