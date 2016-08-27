@@ -176,6 +176,6 @@
   }
 }
 
-.social a {
+.social > a {
   @include ms-respond(margin-right, -1);
 }

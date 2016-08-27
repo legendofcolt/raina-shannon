@@ -25,15 +25,3 @@ $transition-time: 300ms;
 .About a:hover, .About a:active {
   color: $alternate;
 }
-
-.link:focus,
-.About a:focus {
-  color: $near-white;
-  background-color: $alternate;
-  transition: color $transition-time, background-color $transition-time;
-}
-
-.link:focus:active,
-.About a:focus:active {
-  background-color: transparent;
-}
