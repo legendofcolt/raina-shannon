@@ -11,9 +11,6 @@
 
 */
 
-.primary-scheme { color: $primary-scheme; }
-.alternate-scheme { color: $alternate-scheme; }
-
 /* Text colors */
 
 .black-100 {        color: $black-100; }
@@ -175,32 +172,7 @@
 
 /* Background colors */
 
-.bg-gradient {
-  background: $three;
-  background: -webkit-linear-gradient(141deg, $one 0%, $two 51%, $three 75%);
-  background: -o-linear-gradient(141deg, $one 0%, $two 51%, $three 75%);
-  background: -moz-linear-gradient(141deg, $one 0%, $two 51%, $three 75%);
-  background: linear-gradient(141deg, $one 0%, $two 51%, $three 75%);
-}
 
-.header-gradient {
-  display: inline-block;
-  color: $three;
-  -webkit-text-fill-color: transparent;
-  background: -webkit-linear-gradient(141deg, $one 0%, $two 51%, $three 75%);
-  background: -o-linear-gradient(141deg, $one 0%, $two 51%, $three 75%);
-  -webkit-background-clip: text;
-  background-clip: text;
-}
-
-// Takes a degree and two colors to make a text color gradient.
-@mixin text-gradient ($degree, $color1, $color2) {
-  color: $color1;
-  -webkit-text-fill-color: transparent;
-  background: -webkit-linear-gradient($degree, $color1, $color2);
-  background: -o-linear-gradient($degree, $color1, $color2);
-  -webkit-background-clip: text;
-}
 
 .bg-primary-scheme { background-color: $primary-scheme; }
 .bg-alternate-scheme { background-color: $alternate-scheme; }

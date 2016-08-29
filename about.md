@@ -5,7 +5,7 @@ description: ""
 permalink: /about
 ---
 
-# I'm a Graphic Designer & Artist based in Chicago.
+# I'm a Graphic Designer based in Chicago.
 
 <div class="img-container">
 <img src="{{ site.baseurl }}/images/raina-shannon-profile.jpg" alt="Profile picture of Raina Shannon">

@@ -2,30 +2,18 @@
 # Only the main Sass file needs front matter (the dashes are enough)
 ---
 
-// Import partials from `sass_dir` (defaults to `_sass`)
-@import
-    "colors",
-    "media-queries",
-    "base",
-    "box-sizing",
-    "clearfix",
-    "debug_children",
-    // "debug",
-    "display",
-    "floats",
-    "font-awesome.min",
-    "hovers",
-    "images",
-    "line-height",
-    "links",
-    "modular-scale",
-    "normalize",
-    "skins",
-    "spacing",
-    "styles",
-    "text-align",
-    "text-transform",
-    "typography",
-    "visibility",
-    "grid"
+@import 
+  "variables",
+  "mixins",
+  "media-queries", // To be removed !!!
+  "normalize",
+  "modular-scale",
+  "font-awesome.min",
+  "health_check",
+  "base",
+  "objects",
+  "components/header",
+  "styles",
+  "links",  // To be removed !!!
+  "grid" // To be updated into an object !!!
 ;
