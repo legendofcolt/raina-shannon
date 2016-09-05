@@ -1,0 +1,17 @@
+$small-only: 'screen and (max-width: 39.99em)';
+$medium-only: 'screen and (min-width: 40em) and (max-width: 59.99em)';
+$large-only: 'screen and (min-width: 60em) and (max-width: 79.99em)';
+$xlarge-only: 'screen and (min-width: 80em)';
+$medium-up: 'screen and (min-width: 40em)';
+$large-up: 'screen and (min-width: 60em)';
+
+$small-only-grid: 'screen and (max-width: 39.99em)';
+$large-only-grid: 'screen and (max-width: 59.99em)';
+// 760px
+$about-img-break: 'screen and (min-width: 47.5em)';
+
+$breakpoint-not-small: 'screen and (min-width: 30em)' !default;
+$breakpoint-only-small: 'screen and (max-width: 30em)' !default;
+$breakpoint-medium: 'screen and (min-width: 30em) and (max-width: 60em)' !default;
+$breakpoint-large: 'screen and (min-width: 60em)' !default;
+$breakpoint-extra-large: 'screen and (min-width: 120em)' !default;

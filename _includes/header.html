@@ -1,5 +1,6 @@
 <header class="o-container c-header" role="banner">
-    <a class="o-skip" href="#main">skip to content</a>
+  <a class="o-skip" href="#main">skip to content</a>
+
   <h1 class="c-header__title">
     <a class="c-header__link" href="{{ site.baseurl }}/">raina shannon</a>
   </h1>
@@ -7,8 +8,8 @@
   <a class="c-header__toggle js-menu-toggle" href="#">menu</a>
 
   <nav class="c-header__nav js-menu">
-    <a class="c-header__link c-header__link--nav link{% if page.url != '/about/' %} link-active {% endif %}" href="{{ site.baseurl }}/">portfolio</a>
-    <a class="c-header__link c-header__link--nav link{% if page.url == '/about/' %} link-active {% endif %}" href="{{ site.baseurl }}/about">about</a>
+    <a class="c-header__link c-header__link--nav link{% if page.url != '/about' %} c-header__link--active {% endif %}" href="{{ site.baseurl }}/">portfolio</a>
+    <a class="c-header__link c-header__link--nav link{% if page.url == '/about' %} c-header__link--active {% endif %}" href="{{ site.baseurl }}/about">about</a>
     <a class="c-header__link c-header__link--nav link" href="#" >r&#233;sum&#233;</a>
   </nav>
 </header>
