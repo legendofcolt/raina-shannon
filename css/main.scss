@@ -2,30 +2,41 @@
 # Only the main Sass file needs front matter (the dashes are enough)
 ---
 
-// Import partials from `sass_dir` (defaults to `_sass`)
-@import
-    "colors",
-    "media-queries",
-    "base",
-    "box-sizing",
-    "clearfix",
-    "debug_children",
-    // "debug",
-    "display",
-    "floats",
-    "font-awesome.min",
-    "hovers",
-    "images",
-    "line-height",
-    "links",
-    "modular-scale",
-    "normalize",
-    "skins",
-    "spacing",
-    "styles",
-    "text-align",
-    "text-transform",
-    "typography",
-    "visibility",
-    "grid"
+@import 
+  // Settings
+  "01-settings.colors",
+  "01-settings.global",
+  "01-settings.media-queries",
+
+  // Tools
+  "02-tools.functions",
+  "02-tools.mixins",
+  "02-tools.modular-scale",
+
+  // Generic
+  "03-generic.box-sizing",
+  "03-generic.font-awesome.min",
+  "03-generic.health_check",
+  "03-generic.normalize",
+
+  // Elements
+  "04-elements.body",
+  "04-elements.headings",
+  "04-elements.images",
+  "04-elements.links",
+
+  // Objects
+  "05-objects.grid",
+  "05-objects.wrappers",
+
+  // Components
+  "06-components.about-page",
+  "06-components.buttons",
+  "06-components.carousel",
+  "06-components.main-header",
+  "06-components.site-nav",
+  "06-components.social-links",
+
+  // Trumps
+  "07-trumps.utilities"
 ;

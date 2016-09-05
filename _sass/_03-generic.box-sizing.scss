@@ -1,21 +1,3 @@
-
-// Converted Variables
-
-
-// Custom Media Query Variables
-
-
-/*
-
-  BOX SIZING
-
-  A saner box-model.
-  Only applied to unqualified elements where this model makes sense.
-
-  Apply .border-box where needed.
-
-*/
-
 nav,
 main,
 section,
@@ -82,4 +64,3 @@ input[type="password"]:after,
 .border-box:after {
   box-sizing: border-box;
 }
-

@@ -105,79 +105,17 @@ Styleguide 1.1
   }
 }
 
-/*
-Wrappers
-Use wrappers when you need a content area that is a standardized width and centered on the page.
-Markup:
-<div class="wrapper {{modifier_class}}">Wrapper</div>
-.wrapper-small      - Small Wrapper
-.wrapper-large      - Large Wrapper
-Styleguide 1.2
-*/
+.grid-image {
+  position: relative;
+  overflow: hidden;
+  padding-bottom: 70%; // here the desired aspect ratio
 
-.wrapper {
-  margin: 0 auto;
-  max-width: 960px;
-  padding: 4.8rem 2rem;
-}
-
-.wrapper--large {
-  max-width: 1200px;
-  padding: 7.2rem 2rem;
-}
-
-.wrapper--small {
-  max-width: 640px;
-  padding: 2.4rem 2rem;
-}
-
-
-// DELETE !!!
-/*
-
-   GRID
-
-
-*/
-.grid-old {
-  display: flex;
-  flex-wrap: wrap;
-  list-style: none;
-  margin: 0;
-  padding: 0;
-}
-
-.grid-cell { flex: 1; }
-
-.grid--gutters {
-  margin: -1em 0 1em -1em;
-
-  & > .grid-cell {
-    padding: 1em 0 0 1em;
+  & img {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
   }
-}
-
-/* Base classes for all media */
-.grid--fit > .grid-cell { flex: 1; }
-.grid--full > .grid-cell { flex: 0 0 100%; }
-.grid--1of2 > .grid-cell { flex: 0 0 50% }
-.grid--1of3 > .grid-cell { flex: 0 0 33.3333% }
-.grid--1of4 > .grid-cell { flex: 0 0 25% }
-
-/* Small to medium screens */
-@media #{$breakpoint-not-small} {
-  .small-grid--fit > .grid-cell { flex: 1; }
-  .small-grid--full > .grid-cell { flex: 0 0 100%; }
-  .small-grid--1of2 > .grid-cell { flex: 0 0 50% }
-  .small-grid--1of3 > .grid-cell { flex: 0 0 33.3333% }
-  .small-grid--1of4 > .grid-cell { flex: 0 0 25% }
-}
-
-/* Large screens */
-@media #{$breakpoint-large} {
-  .large-grid--fit > .grid-cell { flex: 1; }
-  .large-grid--full > .grid-cell { flex: 0 0 100%; }
-  .large-grid--1of2 > .grid-cell { flex: 0 0 50% }
-  .large-grid--1of3 > .grid-cell { flex: 0 0 33.3333% }
-  .large-grid--1of4 > .grid-cell { flex: 0 0 25% }
 }
