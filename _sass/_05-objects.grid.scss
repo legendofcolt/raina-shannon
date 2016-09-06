@@ -1,50 +1,10 @@
-/*
-Grid from https://github.com/cutestrap/cutestrap
-Basic grid made using flexbox. By default, the grid is collapsed on small screens.
-Markup:
-<main class="grid {{modifier_class}}">
-  <section class="">
-    Cell 1
-  </section>
-  <article class="grid">
-    Cell 2
-  </article>
-</main>
-.grid--medium           - Grid starts at medium sized screens
-.grid--large            - Grid starts at large and up screens
-Styleguide 1.0
-*/
-
-/*
-Direct children of `.grid` are columns.
-Markup:
-<main class="grid">
-  <section class="{{modifier_class}}">
-    Cell 1
-  </section>
-  <article class="grid">
-    <p class="grid {{modifier_class}}">
-      Cell 2.1
-    </p>
-    <div>
-      <p>Cell 2.2</p>
-    </div>
-  </article>
-</main>
-.column--light           - Less important column
-.column--heavy           - More important column
-Styleguide 1.1
-*/
-
-// rows
-.grid {
+.o-grid {
   display: -ms-flexbox;
   display: -webkit-flex;
   display: flex;
 }
 
-// columns
-.grid > * {
+.o-grid > .o-grid__item {
   flex: 1;
   flex-grow: 4;
   padding-left: 1rem;
@@ -67,12 +27,12 @@ Styleguide 1.1
   }
 }
 
-@media #{$small-only-grid} {
-  .grid--medium {
+@media #{$about-content-grid} {
+  .o-grid--about {
     display: block;
   }
 
-  .grid--medium > * {
+  .o-grid--about > .o-grid__item {
     padding-left: 0;
     padding-right: 0;
 
@@ -86,26 +46,7 @@ Styleguide 1.1
   }
 }
 
-@media #{$large-only-grid} {
-  .grid--large {
-    display: block;
-  }
-
-  .grid--large > * {
-    padding-left: 0;
-    padding-right: 0;
-
-    &:first-child {
-      margin-left: 0;
-    }
-
-    &:last-child {
-      margin-right: 0;
-    }
-  }
-}
-
-.grid-image {
+.o-grid-image {
   position: relative;
   overflow: hidden;
   padding-bottom: 70%; // here the desired aspect ratio

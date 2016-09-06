@@ -1,30 +1,8 @@
-.skin-gradient,
-.About h1 {
-  @include text-gradient(0deg, $primary, $alternate);
-
-  &:focus {
-    color: $primary !important;
-    -webkit-text-fill-color: $primary !important;
-    background: $alternate !important;
-    -webkit-background-clip: initial;
-    background-clip: initial;
-  }
-}
-
-.About:before,
-.About:after {
-  content: " ";
-  display: table;
-}
-.About:after {
-  clear: both;
-}
-
-.About {
-  *zoom: 1;
-}
-
-.About h1 {
-  display: inline-block;
+.about__title {
   @include ms-respond(font-size, 4);
+  @include text-gradient(0deg, $primary, $alternate);
+}
+
+.about__image {
+  @include ms-respond(padding-top, 3);
 }
