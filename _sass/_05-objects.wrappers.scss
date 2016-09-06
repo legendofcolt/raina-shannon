@@ -14,17 +14,9 @@
   }
 }
 
-// Refactor or remove !!!
-.img-container {
-  max-width: 427px;
-  display: block;
-  margin: 0 auto;
+.o-img-container {
   @include ms-respond(padding-bottom, 2);
-
-  @media #{$about-img-break} {
-    float: right;
-    @include ms-respond(padding-left, 2);
-  }
+  text-align: center;
 }
 
 // Rename !!!
