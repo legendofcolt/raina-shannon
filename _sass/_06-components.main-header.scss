@@ -1,12 +1,19 @@
-// Rename !!!
-.o-skip {
+.c-header {
+  align-items: baseline;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  @include ms-respond(padding, 1);
+}
+
+.c-header__skip {
   color: $near-white;
   left: 50%;
   @include ms-respond(padding, -4);
   position: absolute;
   top: -100%;
-  transform: translateX(-50%);
   @include transition(all 300ms cubic-bezier(0.49, 0.99, 0.54, 0.98));
+  transform: translateX(-50%);
   z-index: 1000;
 
   &:focus {
@@ -16,47 +23,30 @@
   }
 }
 
-.c-header {
-  align-items: center;
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  @include ms-respond(padding, 1);
-
-  @media #{$medium-up} {
-
-  }
-}
-
 .c-header__title {
-  @include header-font;
-  @include ms-respond(font-size, 2);
+  @include ms-respond(font-size, 3);
   margin-top: 0;
   margin-bottom: 0;
-  order: 2;
   margin-left: auto;
-
-  @media #{$medium-up} {
-
-  }
+  order: 2;
 }
 
 .c-header__toggle {
-  background-color: $primary;
+  background-color: transparent;
   border: 2px solid $primary;
-  color: $near-white;
+  color: $primary;
   @include ms-respond(font-size, 1);
-  @include ms-respond(padding, -4);
-  @include transition(all 300ms cubic-bezier(0.49, 0.99, 0.54, 0.98));
+  @include ms-respond(padding, -5);
+  @include transition(all $transition-time $easeInOutQuart);
 
   &.is-active {
-    background-color: transparent;
-    color: $primary;
+    background-color: $primary;
+    color: $near-white;
   }
 
-    @media #{$medium-up} {
-      display: none;
-      visibility: hidden;
+  @media #{$medium-up} {
+    display: none;
+    visibility: hidden;
   }
 }
 
@@ -67,15 +57,15 @@
   order: 3;
   overflow: hidden;
   text-align: center;
-  @include transition(all 300ms cubic-bezier(0.49, 0.99, 0.54, 0.98));
+  @include transition(all $transition-time $easeInOutQuart);
 
   &.is-active {
     max-height: 50rem;
   }
 
   @media#{$medium-up} {
-    @include ms-respond(font-size, 0);
     flex-basis: initial;
+    @include ms-respond(font-size, 0);
     margin-top: 0;
     max-height: initial;
     order: initial;
@@ -85,7 +75,6 @@
 
 .c-header__link {
   color: $silver;
-  @include transition(color 200ms linear);
 
   &:hover {
     color: $primary;
