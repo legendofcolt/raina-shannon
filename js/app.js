@@ -12,6 +12,16 @@
           app.nav.navMenuEl.classList.toggle('is-active');
       }
     },
+    // Masonry
+    'masonry': {
+      'masonryInit': new Masonry( document.querySelector('.o-grid-masonry'), {
+        // options
+        itemSelector: '.o-grid-masonry__item',
+        columnWidth: '.o-grid-masonry__sizer',
+        gutter: 20,
+        percentPosition: true
+      })
+    },
     // Init
     'init': function() {
       app.nav.navInit();
