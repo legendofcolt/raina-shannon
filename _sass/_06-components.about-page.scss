@@ -1,8 +1,8 @@
-.about__title {
+.c-about__title {
   @include ms-respond(font-size, 4);
   @include text-gradient(0deg, $primary, $alternate);
 }
 
-.about__image {
+.c-about__image {
   @include ms-respond(padding-top, 3);
 }
