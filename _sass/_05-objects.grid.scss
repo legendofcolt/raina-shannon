@@ -67,7 +67,11 @@
 
 .o-grid-masonry__sizer,
 .o-grid-masonry__item {
-  width: 48%;
+  width: 100%;
+
+  @media #{$o-grid-masonry__item\@medium} {
+    width: 48%;
+  }
 }
 
 .o-grid-masonry__item {
