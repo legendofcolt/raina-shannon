@@ -1,10 +1,10 @@
 ---
 layout: post
-title:  "Halo Top"
-description: "This ice cream is so healthy, people won’t believe it’s real."
-date:   2016-07-30
+title:  "Lush"
+description: ""
+date:   2016-08-30
 categories: projects
-image: /images/halotop1.jpg
+image: /images/Lush_Bottles_All-thumbnail.png
 ---
 
 This ice cream is so healthy, people won’t believe it’s real.

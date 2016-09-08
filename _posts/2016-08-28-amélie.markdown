@@ -1,10 +1,10 @@
 ---
 layout: post
-title:  "Mrs. Dash"
-description: "Cooking can be frustrating. Luckily, Mrs. Dash makes even the simplest of meals taste like a masterpiece."
-date:   2016-08-01
+title:  "Amélie"
+description: ""
+date:   2016-08-28
 categories: projects
-image: /images/mrs.dash-pizzarolls.jpg
+image: /images/Amélie_DVD_Cover_Mockup_BOTH-thumbnail.png
 ---
 
 Cooking can be frustrating. Luckily, Mrs. Dash makes even the simplest of meals taste like a masterpiece.

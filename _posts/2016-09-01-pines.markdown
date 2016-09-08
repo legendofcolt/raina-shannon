@@ -1,10 +1,10 @@
 ---
 layout: post
-title:  "Dunkin Donuts"
-description: "Coffee shouldn’t have to be an ordeal. It has been a battle between the two largest coffeehouses for over four decades, but there is only one, clear winner. Simple as that."
-date:   2016-05-15
+title:  "Pines"
+description: ""
+date:   2016-09-01
 categories: projects
-image: /images/How_About_A_Donut+Sprinkles.png
+image: /images/Pines_Photo_Edits-thumbnail.png
 ---
 
 Coffee shouldn’t have to be an ordeal. It has been a battle between the two largest coffeehouses for over four decades, but there is only one, clear winner. Simple as that.
