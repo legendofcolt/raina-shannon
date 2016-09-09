@@ -16,13 +16,21 @@
     'masonry': {
       'masonryGridEl': document.querySelector('.o-grid-masonry'),
       'masonryInit': function() {
-        new Masonry( document.querySelector('.o-grid-masonry'), {
+        var masonry = new Masonry( app.masonry.masonryGridEl, {
           // options
           itemSelector: '.o-grid-masonry__item',
           columnWidth: '.o-grid-masonry__sizer',
           gutter: '.o-grid-masonry__gutter-sizer',
           percentPosition: true
         })
+
+        imagesLoaded(app.masonry.masonryGridEl).on('progress', function() {
+          // layout Masonry after each image loads
+          masonry.layout();
+        });
+      },
+      'imageLoader': function() {
+
       }
     },
     // Init
