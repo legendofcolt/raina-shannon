@@ -60,3 +60,25 @@
     margin: auto;
   }
 }
+
+.o-grid-masonry {
+  max-width: ms(9);
+}
+
+.o-grid-masonry__sizer,
+.o-grid-masonry__item {
+  width: 100%;
+
+  @media #{$o-grid-masonry__item\@medium} {
+    width: 48%;
+  }
+}
+
+.o-grid-masonry__item {
+  float: left;
+  margin-bottom: 20px;
+}
+
+.o-grid-masonry__item-width60 {
+  width: 60%;
+}

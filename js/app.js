@@ -12,9 +12,29 @@
           app.nav.navMenuEl.classList.toggle('is-active');
       }
     },
+    // Masonry
+    'masonry': {
+      'masonryGridEl': document.querySelector('.o-grid-masonry'),
+      'masonryInit': function() {
+        new Masonry( document.querySelector('.o-grid-masonry'), {
+          // options
+          itemSelector: '.o-grid-masonry__item',
+          columnWidth: '.o-grid-masonry__sizer',
+          gutter: 20,
+          percentPosition: true
+        })
+      }
+    },
     // Init
     'init': function() {
+      // Initialize nav binding
       app.nav.navInit();
+
+      // If Masonry exists on the page, Initialize
+      if (null != app.masonry.masonryGridEl) {
+        app.masonry.masonryInit();
+      }
+
     }
   };
   window.app = app;

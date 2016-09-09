@@ -1,8 +1,9 @@
-.c-about__title {
+.c-portfolio__title {
+  display: inline-block;
   @include ms-respond(font-size, 4);
   @include text-gradient(0deg, $primary, $alternate);
 }
 
-.c-about__image {
-  @include ms-respond(padding-top, 3);
+.c-portfolio__item {
+  margin: 0;
 }
