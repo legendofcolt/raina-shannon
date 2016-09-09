@@ -20,7 +20,7 @@
           // options
           itemSelector: '.o-grid-masonry__item',
           columnWidth: '.o-grid-masonry__sizer',
-          gutter: 20,
+          gutter: '.o-grid-masonry__gutter-sizer',
           percentPosition: true
         })
       }
