@@ -1,0 +1,7 @@
+.c-footer {
+  @include ms-respond(padding, 1);
+}
+
+.c-footer__content {
+  @include ms-respond(font-size, -1);
+}
