@@ -7,10 +7,10 @@ categories: projects
 image: /images/Lush_Bottles_All-thumbnail.png
 ---
 
-This ice cream is so healthy, people won’t believe it’s real.
+Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellat sint laudantium accusantium nihil, possimus ex! Sunt architecto repellat earum, consequatur quas laborum. Voluptas veniam mollitia facere quae officia fuga alias!
 
-![We would tell you how many calories are in our pints, but you probably wonldn't believe us anyways.]({{ site.baseurl }}/images/halotop1.jpg)
+![Lush products]({{ site.baseurl }}/images/Lush_Bottles_All-thumbnail.png)
 
-![Have your cake and eat it, too. No seriously, have some cake.]({{ site.baseurl }}/images/halotop2.jpg)
+![Lush bottles]({{ site.baseurl }}/images/Lush_Bottles_Only.png)
 
-![At six grams of protein per pint, there has to be something wrong with it, right?]({{ site.baseurl }}/images/halotop3.jpg)
+![Lush jars]({{ site.baseurl }}/images/Lush_Jars_Only.png)

@@ -7,10 +7,8 @@ categories: projects
 image: /images/Amélie_DVD_Cover_Mockup_BOTH-thumbnail.png
 ---
 
-Cooking can be frustrating. Luckily, Mrs. Dash makes even the simplest of meals taste like a masterpiece.
+Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nostrum minima autem laboriosam impedit. Reiciendis eaque doloribus, praesentium veniam eos asperiores quisquam nam assumenda ea repellat aperiam unde laborum, cumque quasi.
 
-![Mr. I'll just get some pizza]({{ site.baseurl }}/images/mrs.dash-pizzarolls.jpg)
+![Amelie DVD cover]({{ site.baseurl }}/images/Amélie_DVD_Cover_Mockup_BOTH-thumbnail.png)
 
-![Mr. Can't wait for a pot of water to boil]({{ site.baseurl }}/images/mrs.dash-ramen-water.jpg)
-
-![Mr. Doesn't know how to pronounce sauté]({{ site.baseurl }}/images/mrs.dash-saute.jpg)
+![Amelie Poster]({{ site.baseurl }}/images/Amélie_Poster_holding-thumbnail.png)

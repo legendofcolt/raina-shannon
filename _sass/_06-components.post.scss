@@ -1,0 +1,9 @@
+.c-post {
+  @include ms-respond(padding-bottom, 4);
+}
+
+.c-post__title {
+  display: inline-block;
+  @include ms-respond(font-size, 4);
+  @include text-gradient(0deg, $primary, $alternate);
+}
