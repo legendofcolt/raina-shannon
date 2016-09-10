@@ -18,10 +18,12 @@
       'masonryInit': function() {
         var masonry = new Masonry( app.masonry.masonryGridEl, {
           // options
-          itemSelector: '.o-grid-masonry__item',
           columnWidth: '.o-grid-masonry__sizer',
+          itemSelector: '.o-grid-masonry__item',
           gutter: '.o-grid-masonry__gutter-sizer',
-          percentPosition: true
+          percentPosition: true,
+          stagger: 50,
+          transitionDuration: 300
         })
 
         imagesLoaded(app.masonry.masonryGridEl).on('progress', function() {
