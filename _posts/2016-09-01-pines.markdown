@@ -7,10 +7,8 @@ categories: projects
 image: /images/Pines_Photo_Edits-thumbnail.png
 ---
 
-Coffee shouldn’t have to be an ordeal. It has been a battle between the two largest coffeehouses for over four decades, but there is only one, clear winner. Simple as that.
+Lorem ipsum dolor sit amet, consectetur adipisicing elit. Autem magnam, quidem saepe explicabo rerum ut voluptatibus vitae, assumenda ex laborum. Repudiandae, placeat illo iusto culpa dolorum sapiente molestias. Quaerat, ab.
 
-![How about a cd to go with your coffee?]({{ site.baseurl }}/images/How_About_A_Donut+Sprinkles.png)
+![Pines album on a vinyl player]({{ site.baseurl }}/images/Pines_Photo_Edits-thumbnail.png)
 
-![Two page Dunkin Donuts promotional with complicated names]({{ site.baseurl }}/images/Heres_Your_Coffee+Sprinkles.png)
-
-![Two page Dunkin Donuts promotional with complicated coffee name]({{ site.baseurl }}/images/Ill_Have_A_Coffee+Sprinkles.png)
+![Pines album cover with vinyl halfway out]({{ site.baseurl }}/images/PinesDet_Photo-thumbnail.png)
