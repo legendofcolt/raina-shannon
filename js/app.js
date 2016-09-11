@@ -8,8 +8,8 @@
         app.nav.navToggleEl.addEventListener('click', app.nav.navToggle)
       },
       'navToggle': function () {
-          app.nav.navToggleEl.classList.toggle('is-active');
-          app.nav.navMenuEl.classList.toggle('is-active');
+        app.nav.navToggleEl.classList.toggle('is-active');
+        app.nav.navMenuEl.classList.toggle('is-active');
       }
     },
     // Masonry
