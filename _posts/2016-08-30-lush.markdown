@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Lush"
+title:  "LUSH Cosmetics – Branding"
 description: ""
 date:   2016-08-30
 categories: projects
