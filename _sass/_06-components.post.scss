@@ -7,3 +7,17 @@
   @include ms-respond(font-size, 4);
   @include text-gradient(0deg, $primary, $alternate);
 }
+
+.c-post__image {
+  vertical-align: middle;
+}
+
+.c-post__text {
+  align-items: center;
+  display: flex;
+  justify-content: center;
+}
+
+.c-post__paragraph {
+  @include ms-respond(padding, 3);
+}
