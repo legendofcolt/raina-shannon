@@ -5,4 +5,8 @@
 
 .c-about__image {
   @include ms-respond(padding-top, 3);
+
+  @media #{$medium-up} {
+    max-width: 65%;
+  }
 }

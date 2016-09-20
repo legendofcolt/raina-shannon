@@ -7,32 +7,30 @@
 .o-grid > .o-grid__item {
   flex: 1;
   flex-grow: 4;
-  padding-left: 1rem;
-  padding-right: 1rem;
+  padding-left: 1%;
+  padding-right: 1%;
 
   &:first-child {
-    margin-left: -1rem;
+    margin-left: -1%;
   }
 
   &:last-child {
-    margin-right: -1rem;
-  }
-
-  &.column--light {
-    flex-grow: 2;
-  }
-
-  &.column--heavy {
-    flex-grow: 8;
+    margin-right: -1%;
   }
 }
 
+.o-grid--post {
+  margin-bottom: 2%;
+}
+
 @media #{$about-content-grid} {
-  .o-grid--about {
+  .o-grid--about,
+  .o-grid--post {
     display: block;
   }
 
-  .o-grid--about > .o-grid__item {
+  .o-grid--about > .o-grid__item,
+  .o-grid--post > .o-grid__item {
     padding-left: 0;
     padding-right: 0;
 
@@ -46,19 +44,16 @@
   }
 }
 
-.o-grid-image {
-  position: relative;
-  overflow: hidden;
-  padding-bottom: 70%; // here the desired aspect ratio
+.o-grid__item--order-1 {
+  order: 1;
+  margin-left: -1%;
+  margin-right: initial !important;
+}
 
-  & img {
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    margin: auto;
-  }
+.o-grid__item--order-2 {
+  order: 2;
+  margin-left: initial !important;
+  margin-right: -1%;
 }
 
 .o-grid-masonry {
