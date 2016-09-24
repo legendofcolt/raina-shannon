@@ -30,9 +30,12 @@
           // layout Masonry after each image loads
           masonry.layout();
         });
-      },
-      'imageLoader': function() {
-
+      }
+    },
+    // Retinajs
+    'retinajs': {
+      'retinajsInit': function () {
+        retinajs();
       }
     },
     // Init
@@ -40,7 +43,10 @@
       // Initialize nav binding
       app.nav.navInit();
 
-      // If Masonry exists on the page, Initialize
+      // Initialize retinajs
+      app.retinajs.retinajsInit();
+
+      // If Masonry exists on the page, initialize
       if (null != app.masonry.masonryGridEl) {
         app.masonry.masonryInit();
       }
