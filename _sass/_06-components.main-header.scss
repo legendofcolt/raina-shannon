@@ -84,6 +84,12 @@
   color: $silver;
 
   &:hover {
+    color: $alternate;
+  }
+}
+
+.c-header__link--title {
+  &:hover {
     color: $primary;
   }
 }
@@ -107,5 +113,5 @@
 }
 
 .c-header__link--active {
-  color: $near-black;
+  color: $primary;
 }
