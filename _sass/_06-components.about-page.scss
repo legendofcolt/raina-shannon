@@ -1,6 +1,18 @@
 .c-about__title {
   @include ms-respond(font-size, 4);
-  @include text-gradient(0deg, $primary, $alternate);
+  color: $primary;
+  background: -webkit-linear-gradient(left, $primary, $alternate, $primary);
+  background-size: 800px 200px;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -webkit-animation-duration: 5s;
+          animation-duration: 5s;
+  -webkit-animation-name: animate-gradient-text;
+          animation-name: animate-gradient-text;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
 }
 
 .c-about__image {
