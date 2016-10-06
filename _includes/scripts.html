@@ -1,3 +1,15 @@
+<!--  type js has to happen in a style tag and NOT in external CSS-->
+<style>
+  .c-about__text,
+  .c-post__paragraph {
+    max-width: 28em;
+    min-font-size: 12px;
+    rag-adjust: small-words;
+    widow-adjust: padding-right;
+  }
+</style>
+<script src="{{ "/js/type.min.js" | prepend: site.baseurl }}"></script>
+
 <script src="{{ "/js/masonry.pkgd.min.js" | prepend: site.baseurl }}"></script>
 <script src="{{ "/js/imagesloaded.pkgd.min.js" | prepend: site.baseurl }}"></script>
 <script type="text/javascript" src="{{ "/js/retina.min.js" | prepend: site.baseurl }}"></script>
