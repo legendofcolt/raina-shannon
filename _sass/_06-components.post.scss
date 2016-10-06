@@ -23,6 +23,7 @@
 }
 
 .c-post__quote {
+  @include ms-respond(padding, 3);
   quotes: "\201C" "\201D" "\2018" "\2019";
 }
 
