@@ -49,6 +49,11 @@
       app.nav.navInit();
 
       // Retinajs
+      setTimeout(function() {
+        console.log('timeout');
+        app.retinajs.retinajsReset();
+      }, 250);
+
       window.addEventListener('resize', app.retinajs.retinajsReset);
 
       // If Masonry exists on the page, initialize
