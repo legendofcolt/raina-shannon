@@ -34,17 +34,22 @@
     },
     // Retinajs
     'retinajs': {
-      'retinajsInit': function () {
-        retinajs();
+      'retinajsReset': function () {
+        var retinaImgs = document.querySelectorAll('[data-rjs]');
+
+        for (var i = 0; i < retinaImgs.length; i++) {
+          retinaImgs[i].removeAttribute('width');
+          retinaImgs[i].removeAttribute('height');
+        }
       }
     },
     // Init
     'init': function() {
-      // Initialize nav binding
+      // Nav
       app.nav.navInit();
 
-      // Initialize retinajs
-      app.retinajs.retinajsInit();
+      // Retinajs
+      window.addEventListener('resize', app.retinajs.retinajsReset);
 
       // If Masonry exists on the page, initialize
       if (null != app.masonry.masonryGridEl) {
