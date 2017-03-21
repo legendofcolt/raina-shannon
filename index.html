@@ -4,9 +4,7 @@ layout: default
 
 <article class="o-container">
   <h1 class="c-portfolio__title">Portfolio</h1>
-  <div class="o-grid-masonry u-cf">
-    <div class="o-grid-masonry__sizer"></div>
-    <div class="o-grid-masonry__gutter-sizer"></div>
+  <div class="masonry">
     {% for post in site.posts %}
       {% include post.html %}
     {% endfor %}
