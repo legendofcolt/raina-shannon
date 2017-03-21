@@ -10,7 +10,7 @@
   column-fill: initial;
 }
 .masonry .brick {
-  margin-bottom: 30px;
+  @include ms-respond(margin-bottom, 1);
 }
 .masonry .brick img {
   -moz-transition: all .5s ease-in-out;
