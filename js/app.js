@@ -16,7 +16,7 @@
     'masonry': {
       'masonryGridEl': document.querySelector('.o-grid-masonry'),
       'masonryInit': function() {
-        var masonry = new Masonry( app.masonry.masonryGridEl, {
+        const masonry = new Masonry( app.masonry.masonryGridEl, {
           // options
           columnWidth: '.o-grid-masonry__sizer',
           itemSelector: '.o-grid-masonry__item',
@@ -35,7 +35,7 @@
     // Retinajs
     'retinajs': {
       'retinajsReset': function () {
-        var retinaImgs = document.querySelectorAll('[data-rjs]');
+        const retinaImgs = document.querySelectorAll('[data-rjs]');
 
         for (var i = 0; i < retinaImgs.length; i++) {
           retinaImgs[i].removeAttribute('width');
@@ -43,14 +43,25 @@
         }
       }
     },
+    'getDate': {
+      'getYear': function () {
+        return new Date().getFullYear();
+      },
+      'applyYear': function(el, year) {
+        el.innerHTML = year;
+      },
+    },
     // Init
     'init': function() {
       // Nav
       app.nav.navInit();
 
+      // Copyright Date
+      const copyrightEl = document.querySelector('#copyright-year');
+      app.getDate.applyYear(copyrightEl, app.getDate.getYear());
+
       // Retinajs
       setTimeout(function() {
-        console.log('timeout');
         app.retinajs.retinajsReset();
       }, 250);
 
