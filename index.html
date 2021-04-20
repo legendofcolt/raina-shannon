@@ -6,7 +6,15 @@ layout: default
   <h1 class="c-portfolio__title">Portfolio</h1>
   <div class="masonry">
     {% for post in site.posts %}
-      {% include post.html %}
+      {% if post.categories contains 'case-studies' %}
+        {% include post.html %}
+      {% endif %}
     {% endfor %}
+
+    <div class="brick">
+      <a class="" href="{{ site.baseurl }}/miscellaneous">
+        <img class="" data-rjs="3" src="{{ site.baseurl }}/images/MiscCover.png" alt="Art, Design, and Sketches">
+      </a>
+  </div>
   </div>
 </article>
