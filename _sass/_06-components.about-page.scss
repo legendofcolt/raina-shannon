@@ -1,18 +1,24 @@
 .c-about__title {
+  max-width: 9em;
   @include ms-respond(font-size, 4);
   color: $primary;
-  background: -webkit-linear-gradient(left, $primary, $alternate, $primary);
-  background-size: 800px 200px;
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  -webkit-animation-duration: 5s;
-          animation-duration: 5s;
-  -webkit-animation-name: animate-gradient-text;
-          animation-name: animate-gradient-text;
-  -webkit-animation-iteration-count: infinite;
-          animation-iteration-count: infinite;
-  -webkit-animation-fill-mode: forwards;
-          animation-fill-mode: forwards;
+  @include text-gradient(0deg, $alternate, $primary, #d6a2f8);
+  // background: -webkit-linear-gradient(left, $alternate, $primary, #d6a2f8);
+  // background-size: 1200px 200px;
+  // -webkit-background-clip: text;
+  // -webkit-text-fill-color: transparent;
+  // -webkit-animation-duration: 5s;
+  //         animation-duration: 5s;
+  // -webkit-animation-name: animate-gradient-text;
+  //         animation-name: animate-gradient-text;
+  // -webkit-animation-iteration-count: infinite;
+  //         animation-iteration-count: infinite;
+  // -webkit-animation-fill-mode: forwards;
+  //         animation-fill-mode: forwards;
+}
+
+.c-about__text {
+  @include ms-respond(padding, -5);
 }
 
 .c-about__image {
