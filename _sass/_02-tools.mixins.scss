@@ -1,15 +1,15 @@
 // Takes a degree and two colors to make a text color gradient.
-@mixin text-gradient ($degree, $color1, $color2) {
+@mixin text-gradient ($degree, $color1, $color2, $color3) {
   color: $color1;
   -webkit-text-fill-color: transparent;
-  background: -webkit-linear-gradient($degree, $color1, $color2);
-  background: -o-linear-gradient($degree, $color1, $color2);
+  background: -webkit-linear-gradient($degree, $color1, $color2, $color3);
+  background: -o-linear-gradient($degree, $color1, $color2, $color3);
   -webkit-background-clip: text;
 }
 
 @mixin transition ($props...) {
-  -webkit-transition: $props; 
-  -moz-transition: $props; 
-  -o-transition: $props; 
+  -webkit-transition: $props;
+  -moz-transition: $props;
+  -o-transition: $props;
   transition: $props;
 }
