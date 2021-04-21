@@ -24,7 +24,8 @@
           percentPosition: true,
           stagger: 50,
           transitionDuration: 300,
-          horizontalOrder: false
+          horizontalOrder: true,
+          horizontal: true
         })
 
         imagesLoaded(app.masonry.masonryGridEl).on('progress', function() {
