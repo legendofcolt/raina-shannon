@@ -7,7 +7,7 @@ layout: default
   <div class="masonry">
     {% for post in site.posts %}
       {% if post.categories contains 'projects' %}
-        {% include post.html %}
+        {% include post.html content=post.content %}
       {% endif %}
     {% endfor %}
   </div>

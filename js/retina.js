@@ -178,8 +178,8 @@
         load();
     };
 
-
-    if (Retina.isRetina()) {
-        Retina.init(root);
-    }
+    // TODO: remove
+    // if (Retina.isRetina()) {
+    //     Retina.init(root);
+    // }
 })();

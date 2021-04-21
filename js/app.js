@@ -23,7 +23,8 @@
           gutter: '.o-grid-masonry__gutter-sizer',
           percentPosition: true,
           stagger: 50,
-          transitionDuration: 300
+          transitionDuration: 300,
+          horizontalOrder: false
         })
 
         imagesLoaded(app.masonry.masonryGridEl).on('progress', function() {
