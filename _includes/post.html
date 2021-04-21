@@ -1,5 +1,9 @@
 <div class="brick">
-    <a class="" href="{{ site.baseurl }}{{ post.url }}">
+    {% if post.content == "" %}
       <img class="" data-rjs="3" src="{{ site.baseurl }}{{ post.image }}" alt="{{ post.title }}">
-    </a>
+    {% else %}
+      <a class="" href="{{ site.baseurl }}{{ post.url }}">
+        <img class="" data-rjs="3" src="{{ site.baseurl }}{{ post.image }}" alt="{{ post.title }}">
+      </a>
+    {% endif %}
 </div>
