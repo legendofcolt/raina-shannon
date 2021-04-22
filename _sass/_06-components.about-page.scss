@@ -28,3 +28,22 @@
     max-width: 65%;
   }
 }
+
+.c-framework__pdf {
+  @media #{$small-only} {
+    display: none;
+  }
+}
+
+.c-framework__pdf-link {
+  // margin-bottom: 3rem;
+  @include ms-respond(margin-bottom, 5);
+  display: block;
+  text-align: center;
+  // font-size: 1.5em;
+  @include ms-respond(font-size, 4);
+
+  @media #{$medium-up} {
+    display: none;
+  }
+}
